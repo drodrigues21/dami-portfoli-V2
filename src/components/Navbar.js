@@ -35,7 +35,7 @@ export default function Navbar() {
                 <ul className="desktop-links">
                     <li className="desktop-link">
                         <ion-icon name="home-outline"></ion-icon>
-                        <a href="">Home</a>
+                        <a href="#home" rel="noreferrer">Home</a>
                     </li>
                     <li className="desktop-link"><a href="#about-me" rel="noreferrer">About me</a></li>
                     <li className="desktop-link"><a href="#lookbooks" rel="noreferrer">Lookbooks</a></li>
