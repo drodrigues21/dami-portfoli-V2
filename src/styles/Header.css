@@ -1,7 +1,14 @@
+header {
+    background-color: var(--bg);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .header-container.container {
     display: flex;
     position: relative;
-    padding: 2em 1.5em;
+    padding: 2em 1.5em 1.5em;
 }
 
 .logo h1 {

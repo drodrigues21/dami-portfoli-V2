@@ -3,7 +3,7 @@ import profileImg from '../assets/profile/dami1.JPG';
 
 export default function Hero() {
     return (
-        <section className="container arrow-container">
+        <section id="home" className="container arrow-container">
             <div className="hero-container">
                 <div className="hero-img">
                     <img src={profileImg} alt="" />

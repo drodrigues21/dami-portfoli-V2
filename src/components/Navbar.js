@@ -21,9 +21,9 @@ export default function Navbar() {
                     </div>
                 </div>
                 <ul className="mobile-links">
-                    <li className="mobile-link">
+                    <li onClick={closeMobileNav} className="mobile-link">
                         <ion-icon name="home-outline"></ion-icon>
-                        <a href="/">Home</a>
+                        <a href="#home" rel="noreferrer">Home</a>
                     </li>
                     <li onClick={closeMobileNav} className="mobile-link"><a href="#about-me" rel="noreferrer">About me</a></li>
                     <li onClick={closeMobileNav} className="mobile-link"><a href="#lookbooks" rel="noreferrer">Lookbooks</a></li>
