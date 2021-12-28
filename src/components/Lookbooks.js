@@ -14,7 +14,7 @@ export default function Lookbooks() {
                         <ul className="carousel-content">
                             {lookbookDB.map((lookbook) => (
                                 <li className="carousel-item" key={lookbook.id}>
-                                    <a href={lookbook.link} target="_blank">
+                                    <a href={lookbook.link} target="_blank" rel="noreferrer">
                                         <img src={lookbook.imgSrc} alt="" />
                                     </a>
                                 </li>
