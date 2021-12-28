@@ -1,0 +1,111 @@
+.desktop-nav {
+    display: none;
+}
+
+.menu-toggle {
+    padding: .5em 0;
+    cursor: pointer;
+    position: absolute;
+    top: 2.3em;
+    right: 1.5em;
+    z-index: 1000;
+}
+
+.hamburger {
+    display: block;
+    position: relative;
+    z-index: 1000;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    width: 2em;
+    height: 2px;
+    background-color: var(--text);
+    border-radius: 1em;
+    transition: transform 250ms ease-in;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.hamburger::before {
+    top: 6px;
+}
+
+.hamburger::after {
+    bottom: 6px;
+}
+
+.mobile-links {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--mobile-nav);
+    margin: 0;
+    padding: 7em 0 0 0;
+    z-index: 100;
+
+    transform: translateX(110%);
+    transition: transform 600ms cubic-bezier(.5, 0, .5, 1);
+}
+
+.nav-open .mobile-links {
+    transform: translateX(0);
+}
+
+.nav-open .menu-toggle {
+    position: fixed;
+}
+
+.nav-open .hamburger {
+    transform: rotate(.625turn);
+}
+
+.nav-open .hamburger::before {
+    transform: rotate(90deg) translateX(-6px);
+}
+
+.nav-open .hamburger::after {
+    opacity: 0;
+}
+
+
+.mobile-links .mobile-link {
+    display: flex;
+    align-items: center;
+    padding: 1.4em 0;
+}
+
+.mobile-links .mobile-link a {
+    font-size: 1.2em;
+    letter-spacing: .07em;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: .15em;
+}
+
+.mobile-link ion-icon {
+    font-size: 1em;
+}
+
+@media screen and (min-width: 800px) {
+    .mobile-nav {
+        display: none;
+    }
+
+    .desktop-nav {
+        display: block;
+    }
+}

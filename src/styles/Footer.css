@@ -1,0 +1,42 @@
+.footer-container {
+    color: var(--secondary-text);
+    background: var(--elements);
+}
+
+.footer-container a {
+    color: var(--secondary-text);
+}
+
+.footer {
+    padding: 1em;
+}
+
+.footer h3 {
+    font-size: 1.1em;
+    font-weight: 400;
+
+}
+
+.footer p {
+    font-size: .75em;
+    margin: 2px 0;
+}
+
+.footer a {
+    font-size: .95em;
+    font-weight: 400;
+    border-bottom: 1px solid var(--secondary-text);
+}
+
+.developed {
+    display: flex;
+    justify-content: flex-start;
+    font-size: .7em;
+    font-weight: 300;
+    padding: 1em 0 1em 1.4em ;
+    margin: 0;
+}
+
+.developed a {
+    padding-left: .5em;
+}

@@ -1,0 +1,41 @@
+.hero-container {
+    padding: 0 1em 1em 1em;
+}
+
+.hero-img {
+    max-width: 500px;
+}
+
+.hero-detail hr {
+    display: block;
+    width: 95%;
+    margin: 2.5em auto;
+}
+
+.hero-detail p {
+    font-size: 1.1em;
+    font-weight: 300;
+}
+
+.hero-info h3 {
+    font-size: 2.1em;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.arrow-container ion-icon {
+    position: relative;
+    font-size: 1.5em;
+    padding: 16px;
+    transform: translateY(150px);
+    animation-name: arrowDown;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrowDown {
+    0%   {opacity: 0; transform: translateY(-15px);;}
+    50%  {opacity: 1; }
+    100% {opacity: 0; transform: translateY(0);}
+}
+
