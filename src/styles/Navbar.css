@@ -2,11 +2,6 @@
     display: none;
 }
 
-.navbar-container {
-    /* position: relative;
-    border: 2px solid red; */
-}
-
 .menu-toggle {
     padding: .5em 0;
     cursor: pointer;
@@ -26,7 +21,7 @@
 .hamburger::before,
 .hamburger::after {
     width: 2em;
-    height: 2px;
+    height: 3px;
     background-color: var(--text);
     border-radius: 1em;
     transition: transform 250ms ease-in;
@@ -113,6 +108,5 @@
 
     .desktop-nav {
         display: block;
-        /* position: fixed; */
     }
 }
