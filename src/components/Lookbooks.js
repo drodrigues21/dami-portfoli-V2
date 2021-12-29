@@ -6,7 +6,7 @@ export default function Lookbooks() {
     // console.log(lookbookDB[0].link);
 
     return (
-        <div className="container">
+        <section className="container">
             <div id="lookbooks" className="lookbooks-container">
                 <h2>Lookbooks</h2>
                 <div className="carousel-container">
@@ -23,6 +23,6 @@ export default function Lookbooks() {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

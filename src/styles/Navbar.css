@@ -2,11 +2,16 @@
     display: none;
 }
 
+.navbar-container {
+    /* position: relative;
+    border: 2px solid red; */
+}
+
 .menu-toggle {
     padding: .5em 0;
     cursor: pointer;
     position: absolute;
-    top: 2.2em;
+    top: 1em;
     right: 1.5em;
     z-index: 1000;
 }
@@ -67,6 +72,7 @@
 
 .nav-open .menu-toggle {
     position: fixed;
+    top: 3em;
 }
 
 .nav-open .hamburger {
@@ -100,12 +106,13 @@
     font-size: 1em;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
     .mobile-nav {
         display: none;
     }
 
     .desktop-nav {
         display: block;
+        /* position: fixed; */
     }
 }

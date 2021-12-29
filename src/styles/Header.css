@@ -1,14 +1,11 @@
 header {
-    background-color: var(--bg);
-    position: fixed;
-    top: 0;
-    width: 100%;
+    position: sticky;
+	top: 0;
 }
 
 .header-container.container {
-    display: flex;
-    position: relative;
-    padding: 2em 1.5em 1.5em;
+    padding: 0.6em 1em;
+    background: var(--bg);
 }
 
 .logo h1 {
@@ -19,20 +16,19 @@ header {
 
 .theme-toggle {
     display: flex;
-    align-items: center;
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: .3em .5em 0 0;
+    justify-content: flex-end;
+    align-self: center;
+    padding: 0.55em 1em;
 }
 
 .theme-toggle span{
-    font-size: .75em;
+    font-size: .85em;
     padding-left: .3em;
 }
 
  ion-icon {
-    font-size: .8em;
+    font-size: .9em;
     color: var(--text);
 }
+
 

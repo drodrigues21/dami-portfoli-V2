@@ -1,7 +1,6 @@
+import React from 'react';
 import { useState } from 'react';
-import bannerFullwide from '../assets/bannersFullwide';
-import bannersTall from '../assets/bannersTall';
-import bannersWide from '../assets/bannersWide';
+import bannersDB from '../assets/bannersDB';
 
 import '../styles/EventBanners.css';
 
@@ -10,42 +9,41 @@ export default function EventBanners() {
     const [showModal, setShowModal] = useState(false);
     const [modalImg, setModalImg] = useState('');
 
-    const fullwideModal = (banner) => {
-        const modalImgSrc = banner.target.src;
+    const openModal = (banner) => {
+
+        let modalImgSrc;
+
+        if (banner.target.className === 'see-more') {
+            modalImgSrc = banner.target.parentElement.previousSibling.src;
+            setModalImg(modalImgSrc);
+        } else if (banner.target.className === '') {
+            modalImgSrc = banner.target.src;
+            setModalImg(modalImgSrc);
+        }
 
         setShowModal(true);
-        setModalImg(modalImgSrc);
-    }
 
+    }
 
     const handleClose = () => {
         setShowModal(false);
     }
 
     return (
-        <div className="container">
+        <section className="container">
             <div id="event-banners" className="eventBanners-container">
                 <h2>Event Banners</h2>
                 <div className="eventBanners">
-                    <ul className="eventBanners-content fullwide">
-                        {bannerFullwide.map((banner) => (
-                            <li onClick={(e) => { fullwideModal(e) }} className="eventBanners" key={banner.id}>
-                                <img src={banner.src} alt="" />
-                            </li>
-                        ))}
-                    </ul>
-                    <ul className="eventBanners-content tall">
-                        {bannersTall.map((banner) => (
-                            <li onClick={(e) => { fullwideModal(e) }} className="eventBanners" key={banner.id}>
-                                <img src={banner.src} alt="" />
-                            </li>
-                        ))}
-                    </ul>
-                    <ul className="eventBanners-content wide">
-                        {bannersWide.map((banner) => (
-                            <li onClick={(e) => { fullwideModal(e) }} className="eventBanners" key={banner.id}>
-                                <img src={banner.src} alt="" />
-                            </li>
+                    <ul className="eventBanners-content">
+                        {bannersDB.map((banner) => (
+                            <React.Fragment key={banner.id}>
+                                <li onClick={(e) => { openModal(e) }} className={`eventBanners grid-stacked banner${banner.id}`}>
+                                    <img src={banner.src} alt="" />
+                                    <div className="see-more-container">
+                                        <button onClick={(e) => { openModal(e) }} className="see-more">See More</button>
+                                    </div>
+                                </li>
+                            </React.Fragment>
                         ))}
                     </ul>
                 </div>
@@ -60,6 +58,6 @@ export default function EventBanners() {
                     </div>
                 }
             </div>
-        </div>
+        </section>
     )
 }

@@ -43,18 +43,20 @@ export default function Header() {
     }, [darkmode]);
 
     return (
-
-        <header>
-            <div className="header-container container">
-                <div className="logo">
-                    <h1>Dami Choi</h1>
-                </div>
-                <Navbar />
-                <div className="theme-toggle" onClick={() => toggleTheme()}>
-                    {<ion-icon className="theme-icon" name={icon}></ion-icon>}
-                    <span>{themeText}</span>
-                </div>
+        <>
+            <div className="theme-toggle" onClick={() => toggleTheme()}>
+                {<ion-icon className="theme-icon" name={icon}></ion-icon>}
+                <span>{themeText}</span>
             </div>
-        </header>
+            <header>
+                <div className="header-container container">
+                    <div className="logo">
+                        <h1><a href="#home" rel="noreferrer">Dami Choi</a></h1>
+                    </div>
+                    <Navbar />
+                </div>
+            </header>
+        </>
+
     )
 }
