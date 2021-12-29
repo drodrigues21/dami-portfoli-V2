@@ -31,3 +31,43 @@
     margin: 3em 0 4em;
 }
 
+@media screen and (min-width: 800px) {
+    #about-me {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #about-me h2 {
+        width: 50%;
+    }
+
+    .about-info {
+        width: 50%;
+        margin-top: 5.6em;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    #about-me {
+        margin-top: 2em;
+    }
+
+    #about-me h2 {
+        margin: 0;
+        
+    }
+
+    .about-info p {
+        font-size: 1.1em;
+        margin: 3.5em 0 2em;
+    }
+
+    .about-info h4 {
+        font-size: 1.1em;
+    }
+
+    .about-info h5 {
+        font-size: 1.1em;
+        margin: .2em 0 2em 0;
+    }
+}

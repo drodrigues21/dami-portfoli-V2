@@ -6,6 +6,7 @@
     --light-text: hsla(0, 0%, 0%, 0.65);
     --elements: hsl(330, 2%, 16%);
     --mobile-nav: hsl(0, 0%, 100%);
+    --hover: hsl(60, 4%, 56%);
 }
   
 .darkmode {
@@ -15,6 +16,7 @@
     --light-text: hsla(0, 0%, 100%, 0.65);
     --elements: hsl(60, 7%, 33%);
     --mobile-nav: hsl(60, 7%, 33%);
+    --hover: hsl(60, 12%, 72%);
 }
 
 
@@ -52,4 +54,11 @@ a {
 img {
     width: 100%;
     display: block;
+}
+
+
+@media screen and (min-width: 1080px) {
+    h2 {
+        font-size: 2.5em;
+    }
 }

@@ -31,4 +31,19 @@ header {
     color: var(--text);
 }
 
+@media screen and (min-width: 800px) {
+    .header-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .theme-toggle {
+        padding-right: 7em;
+        padding-bottom: 0;
+        cursor: pointer;
+    }
+}
+
 

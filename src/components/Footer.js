@@ -6,8 +6,10 @@ export default function Footer() {
             <div className="container">
                 <div id='contact' className="footer">
                     <h3>Dami Choi</h3>
-                    <p>Contact me at:</p>
-                    <a href="mailto:damichoi1721@gmail.com">damichoi1721@gmail.com</a>
+                    <div className="contact-me">
+                        <p>Contact me at:</p>
+                        <a href="mailto:damichoi1721@gmail.com">damichoi1721@gmail.com</a>
+                    </div>
                 </div>
                 <p className="developed">Developed by: <a href="https://github.com/drodrigues21" target="_blank" rel="noreferrer"> David Rodrigues</a></p>
             </div>

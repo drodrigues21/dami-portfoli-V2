@@ -101,12 +101,41 @@
     font-size: 1em;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 800px) {
     .mobile-nav {
         display: none;
     }
 
     .desktop-nav {
         display: block;
+    }
+
+    .desktop-links {
+        display: flex;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .desktop-link {
+        padding: 0 .5em;
+    }
+
+    .home-link {
+        display: flex;
+        align-items: center;
+    }
+
+    .home-link a {
+        padding-left: .1em;
+    }
+
+    .desktop-link a:hover {
+        color: var(--hover);
+        border-bottom: 1px solid var(--hover);
+    }
+
+    .home-link:hover > ion-icon {
+        color: var(--hover);
     }
 }

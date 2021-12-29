@@ -33,7 +33,7 @@ export default function EventBanners() {
         <section className="container">
             <div id="event-banners" className="eventBanners-container">
                 <h2>Event Banners</h2>
-                <div className="eventBanners">
+                <div className="eventBannersList">
                     <ul className="eventBanners-content">
                         {bannersDB.map((banner) => (
                             <React.Fragment key={banner.id}>

@@ -9,6 +9,10 @@
     padding: 0;
 }
 
+.eventBannersList {
+    padding: 2em 0;
+}
+
 .eventBanners {
     cursor: pointer;
 }

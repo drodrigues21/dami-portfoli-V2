@@ -14,7 +14,6 @@
 .footer h3 {
     font-size: 1.25em;
     font-weight: 400;
-
 }
 
 .footer p {
@@ -39,4 +38,38 @@
 
 .developed a {
     padding-left: .5em;
+}
+
+@media screen and (min-width: 800px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em 6em;
+    }
+
+    .footer h3 {
+        font-size: 1.7em;
+        font-weight: 400;
+    }
+
+    .footer a {
+        font-size: 1.2em;
+    }
+    
+    .footer a:hover {
+        color: var(--hover);
+        border-bottom: 1px solid var(--hover);
+    }
+
+    .developed a:hover {
+        color: var(--hover);
+    }
+
+    .developed {
+        justify-content: flex-start;
+        font-size: .8em;
+        padding: 2em 0;
+        padding-left: 7.5em;
+    }
 }
