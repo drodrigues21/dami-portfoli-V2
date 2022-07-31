@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/dami-portfolio-V2/static/css/main.309c8f4f.css",
+    "main.js": "/dami-portfolio-V2/static/js/main.5f646d22.js",
+    "static/media/dami1.JPG": "/dami-portfolio-V2/static/media/dami1.14376c0b59a3e0339d03.JPG",
+    "static/media/dami3.JPG": "/dami-portfolio-V2/static/media/dami3.c99cc2bd51ca0df5ac25.JPG",
+    "index.html": "/dami-portfolio-V2/index.html",
+    "main.309c8f4f.css.map": "/dami-portfolio-V2/static/css/main.309c8f4f.css.map",
+    "main.5f646d22.js.map": "/dami-portfolio-V2/static/js/main.5f646d22.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.309c8f4f.css",
+    "static/js/main.5f646d22.js"
+  ]
+}
